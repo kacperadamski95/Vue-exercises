@@ -1,0 +1,46 @@
+header {
+    text-align: center;
+}
+
+#todolist {
+    margin: 3rem auto;
+    max-width: 40rem;
+    -webkit-box-shadow: 0px 0px 28px 11px rgba(36, 38, 47, 1);
+    -moz-box-shadow: 0px 0px 28px 11px rgba(36, 38, 47, 1);
+    box-shadow: 0px 0px 28px 11px rgba(36, 38, 47, 1);
+    border-radius: 1%;
+}
+
+.placeholder {
+    display: grid;
+    text-align: center;
+}
+
+[for="goal"] {
+    font-size: 1.6rem;
+    padding: 1rem 0rem;
+}
+
+[type="text"] {
+    font-size: 1.2rem;
+    align-items: center;
+    margin: 0rem 1rem;
+}
+
+.add-goal {
+    font-size: 1.2rem;
+    width: 30%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    font-size: 1.2rem;
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+}
+
+li {
+    list-style: none;
+}
