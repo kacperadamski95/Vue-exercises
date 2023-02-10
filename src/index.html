@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/vue@next" defer></script>
     <script src="app.js" defer></script>
     </head>
-    <body>
+    <body id="app">
         <header>
             <h1>Vue Exercise - to do list</h1>
         </header>
@@ -25,6 +25,31 @@
             <ul class="list">
                 <li v-for="goal in goals">{{ goal }}</li>
             </ul>
+        </section>
+            <h1>Calculator exercise</h1>
+        <section id="calculator">
+            <div class="div-input">
+            <input v-model="enteredValueCalculator" type="text" class="calculator-input">
+            </div>
+            <div class="grid-container">
+                <button v-on:click="insertNumber(7)">7</button>
+                <button v-on:click="insertNumber(8)">8</button>
+                <button v-on:click="insertNumber(9)">9</button>
+                <button v-on:click="operator('%')" class="operation">%</button>
+                <button v-on:click="insertNumber(4)">4</button>
+                <button v-on:click="insertNumber(5)">5</button>
+                <button v-on:click="insertNumber(6)">6</button>
+                <button v-on:click="operator('x')" class="operation">x</button>
+                <button v-on:click="insertNumber(1)">1</button>
+                <button v-on:click="insertNumber(2)">2</button>
+                <button v-on:click="insertNumber(3)">3</button>
+                <button v-on:click="operator('-')" class="operation">-</button>
+                <button v-on:click="insertNumber(0)">0</button>
+                <button v-on:click="fraction()" class="dot">.</button>
+                <button v-on:click="result()" class="operation">=</button>
+                <button v-on:click="operator('+')" class="operation">+</button>
+                <button v-on:click="clearValue()" class="operation">C</button>
+            </div>
         </section>
     </body>
 </html>
